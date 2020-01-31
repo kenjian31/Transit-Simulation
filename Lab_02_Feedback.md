@@ -1,6 +1,6 @@
 ### Feedback for Lab 02
 
-Run on January 31, 10:49:31 AM.
+Run on January 31, 10:53:06 AM.
 
 
 #### Necessary Files and Structure
@@ -14,13 +14,11 @@ Run on January 31, 10:49:31 AM.
 
 ### Essential Files Exist
 
-+ Fail: Check that file "Makefile" exists.
++ Pass: Check that file "Makefile" exists.
 
-     "Makefile" not found.
++ Fail: Check that file ".gitignore" exists.
 
-+ Skip: Check that file ".gitignore" exists.
-
-  This test was not run because of an earlier failing test.
+     ".gitignore" not found.
 
 
 ### .gitignore set up properly
