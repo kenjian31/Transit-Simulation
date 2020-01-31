@@ -1,6 +1,6 @@
 ### Feedback for Lab 03
 
-Run on January 31, 15:02:33 PM.
+Run on January 31, 15:05:11 PM.
 
 
 #### Necessary Files and Structure
@@ -20,28 +20,20 @@ Run on January 31, 15:02:33 PM.
 
 + Pass: Check that file "Makefile.test" exists.
 
-+ Fail: Check that file ".gitignore" exists.
++ Pass: Check that file ".gitignore" exists.
 
-     ".gitignore" not found.
++ Pass: Check that file "point2.cc" exists.
 
-+ Skip: Check that file "point2.cc" exists.
++ Pass: Check that file "point2.h" exists.
 
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that file "point2.h" exists.
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that file "point2_unittest.cc" exists.
-
-  This test was not run because of an earlier failing test.
++ Pass: Check that file "point2_unittest.cc" exists.
 
 
 #### .gitignore set up properly
 
-+ Skip: Check that file/directory "cluster" does not exist.
++ Fail: Check that file/directory "cluster" does not exist.
 
-  This test was not run because of an earlier failing test.
+     "cluster" found.
 
 + Skip: Check that file/directory "point2_unittest" does not exist.
 
