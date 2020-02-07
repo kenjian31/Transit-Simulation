@@ -129,7 +129,8 @@ void RunPointerDemo() {
   }
 }
 
-// A helper function that creates objects dynamically
+// A helper function that cr    more_deliveries[i]->Transport();
+    more_deliveries[i]->Deliver();eates objects dynamically
 void ReadyForTransport(Object ** dynamic, Object ** local ) {
   // A function to help demonstrate memory leaks and dangling pointers.
 
