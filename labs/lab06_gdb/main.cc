@@ -13,7 +13,7 @@ using namespace std;
 
 void doInterestingThing(int yr) {
   // variables used in this method
-  int* array_len;
+  int array_len;
   Date d1;
   Date d2;
   Date d3;
@@ -21,10 +21,10 @@ void doInterestingThing(int yr) {
 
   cout << " ... A set of Dates ... " << endl;
 
-  array_len = NULL;
+  // array_len = NULL;
   d2 = Date(yr, 4, 19);
   d3 = d2.copy();
-  *array_len = 4;
+  array_len = 4;
 
   cout << "default date is: " << d1.show() << endl;
 
@@ -34,23 +34,29 @@ void doInterestingThing(int yr) {
 
   cout << " ... Now print out 4 dates in reverse time order ... " << endl;
 
-  birthday_list = new Date*[*array_len];
+  birthday_list = new Date*[array_len];
   // accumulate the all dates January 1, from 1990 to 1990+array_len
-  for (int i = 0; i < *array_len; i++) {
+  for (int i = 0; i < array_len; i++) {
     birthday_list[i] = new Date(1990+i, 1, 1);
   }
 
   // now show the dates accumulated in reverse order
-  for (int i = 0; i < *array_len; --i) {
+  for (int i = 0; i < array_len; ++i) {
     cout << "date is: " << birthday_list[i]->show() << endl;
   }
 
   // now set the dates to January 2
-  for (int i = 0; i <= *array_len; i++) {
+  for (int i = 0; i < array_len; i++) {
     *birthday_list[i] = Date(1990+i, 1, 2);
   }
-  
+
   cout << "the first date is: " << birthday_list[0]->show() << endl;
+
+
+  for (int i = 0; i < array_len; i++) {
+    delete birthday_list[i];
+  }
+  delete [] birthday_list;
 }
 
 int main() {
