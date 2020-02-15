@@ -1,6 +1,6 @@
 ### Style Feedback for Lab 07
 
-Run on February 15, 14:41:31 PM.
+Run on February 15, 16:14:12 PM.
 
 
 #### Necessary Files and Structure
@@ -33,17 +33,11 @@ Run on February 15, 14:41:31 PM.
 
 
 
-+ Fail: Cpplint checking for for Google C++ compliance
++ Pass: Cpplint checking for for Google C++ compliance
 
-/export/scratch/cpplint-sherv029/./src/passenger.h:7:  #ifndef header guard has wrong style, please use: SRC_PASSENGER_H_  [build/header_guard] [5]
-/export/scratch/cpplint-sherv029/./src/passenger.h:23:  At least two spaces is best between code and comments  [whitespace/comments] [2]
-/export/scratch/cpplint-sherv029/./src/passenger.h:35:  Constructors callable with one argument should be marked explicit.  [runtime/explicit] [5]
-/export/scratch/cpplint-sherv029/./src/passenger.h:42:  "private:" should be preceded by a blank line  [whitespace/blank_line] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:54:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
++ Pass: Getting mainpage.h back
 
-+ Skip: Getting mainpage.h back
 
-  This test was not run because of an earlier failing test.
 
 
 #### Doxygen
