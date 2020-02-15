@@ -4,8 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#ifndef PASSENGER_H
-#define PASSENGER_H
+#ifndef SRC_PASSENGER_H_
+#define SRC_PASSENGER_H_
 
 
 /*******************************************************************************
@@ -20,7 +20,7 @@
  ******************************************************************************/
 
 
-class Passenger { // : public Reporter {
+class Passenger {  // : public Reporter {
  public:
    /**
     * @brief the main class delcare all function wiil be used
@@ -32,13 +32,14 @@ class Passenger { // : public Reporter {
     *
     * @return Passenger object with name and destination.
     */
-  Passenger(int = -1, std::string = "Nobody");
+  explicit Passenger(int = -1, std::string = "Nobody");
   void Update();
   void GetOnBus();
   int GetTotalWait() const;
   bool IsOnBus() const;
   int GetDestination() const;
   void Report() const;
+
  private:
    /**
     * @brief Process of transit predure
@@ -51,6 +52,5 @@ class Passenger { // : public Reporter {
   int time_on_bus_;
   int id_;
   static int count_;  // global count, used to set ID for new instances
-
 };
 #endif  // SRC_PASSENGER_H_
