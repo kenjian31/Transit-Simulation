@@ -1,6 +1,6 @@
 ### Style Feedback for Lab 07
 
-Run on February 14, 20:11:16 PM.
+Run on February 14, 21:43:08 PM.
 
 
 #### Necessary Files and Structure
@@ -35,16 +35,11 @@ Run on February 14, 20:11:16 PM.
 
 + Fail: Cpplint checking for for Google C++ compliance
 
-/export/scratch/cpplint-sherv029/./src/passenger.h:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
-/export/scratch/cpplint-sherv029/./src/passenger.h:1:  #ifndef header guard has wrong style, please use: SRC_PASSENGER_H_  [build/header_guard] [5]
-/export/scratch/cpplint-sherv029/./src/passenger.h:19:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:19:  At least two spaces is best between code and comments  [whitespace/comments] [2]
-/export/scratch/cpplint-sherv029/./src/passenger.h:20:  public: should be indented +1 space inside class Passenger  [whitespace/indent] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:31:  Constructors callable with one argument should be marked explicit.  [runtime/explicit] [5]
-/export/scratch/cpplint-sherv029/./src/passenger.h:38:  private: should be indented +1 space inside class Passenger  [whitespace/indent] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:38:  "private:" should be preceded by a blank line  [whitespace/blank_line] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:50:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
-/export/scratch/cpplint-sherv029/./src/passenger.h:51:  Closing brace should be aligned with beginning of class Passenger  [whitespace/indent] [3]
+/export/scratch/cpplint-sherv029/./src/passenger.h:7:  #ifndef header guard has wrong style, please use: SRC_PASSENGER_H_  [build/header_guard] [5]
+/export/scratch/cpplint-sherv029/./src/passenger.h:23:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/export/scratch/cpplint-sherv029/./src/passenger.h:35:  Constructors callable with one argument should be marked explicit.  [runtime/explicit] [5]
+/export/scratch/cpplint-sherv029/./src/passenger.h:42:  "private:" should be preceded by a blank line  [whitespace/blank_line] [3]
+/export/scratch/cpplint-sherv029/./src/passenger.h:54:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
 
 + Skip: Getting mainpage.h back
 
