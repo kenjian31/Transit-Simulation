@@ -1,22 +1,26 @@
+/**
+ * @file passenger_.h
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+
 #ifndef PASSENGER_H
 #define PASSENGER_H
+
+
 /*******************************************************************************
  * Includes
  ******************************************************************************/
-
 #include <iostream>
+
 #include <string>
 
 /*******************************************************************************
  * Class Definitions
  ******************************************************************************/
-/**
- * @brief The main class for the generation of passengers.
- *
- * Calls to \ref Generate function to get a new instance of a passenger.
- *  This is a static call, not requiring an instance to invoke the method.
- */
- class Passenger { // : public Reporter {
+
+
+class Passenger { // : public Reporter {
  public:
    /**
     * @brief the main class delcare all function wiil be used
@@ -49,4 +53,4 @@
   static int count_;  // global count, used to set ID for new instances
 
 };
-#endif   // SRC_PASSENGER_H_
+#endif  // SRC_PASSENGER_H_
