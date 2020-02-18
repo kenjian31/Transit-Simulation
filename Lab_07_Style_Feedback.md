@@ -1,6 +1,6 @@
 ### Style Feedback for Lab 07
 
-Run on February 17, 17:07:08 PM.
+Run on February 17, 18:42:20 PM.
 
 
 #### Necessary Files and Structure
@@ -20,13 +20,9 @@ Run on February 17, 17:07:08 PM.
 
 #### .gitignore configured properly
 
-+ Fail: Check that file/directory "docs/html" does not exist.
++ Pass: Check that file/directory "docs/html" does not exist.
 
-     "docs/html" found.
-
-+ Skip: Check that file/directory "docs/latex" does not exist.
-
-  This test was not run because of an earlier failing test.
++ Pass: Check that file/directory "docs/latex" does not exist.
 
 
 #### Google Style Compliance
