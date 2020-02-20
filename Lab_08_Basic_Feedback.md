@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 08
 
-Run on February 20, 11:58:04 AM.
+Run on February 20, 15:30:42 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -57,6 +57,18 @@ Run on February 20, 11:58:04 AM.
 
 
 #### Results
+
++ Skip: Check that a GoogleTest test passes.
+
+  This test was not run because of an earlier failing test.
+
++ Skip: Check that a GoogleTest test passes.
+
+  This test was not run because of an earlier failing test.
+
++ Skip: Check that a GoogleTest test passes.
+
+  This test was not run because of an earlier failing test.
 
 + Skip: Check that a GoogleTest test passes.
 
