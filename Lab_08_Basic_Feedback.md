@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 08
 
-Run on February 22, 18:46:25 PM.
+Run on February 22, 19:38:55 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -57,13 +57,30 @@ Run on February 22, 18:46:25 PM.
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.DaysBetweenTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.DaysBetweenTests.
+<pre>
+[ RUN      ] DateTest.DaysBetweenTests
+./date_unittest.cc:86: Failure
+      Expected: tdate.GetUsDate()
+      Which is: "01-01-2016"
+To be equal to: "03-01-2016"
+Days in 2016 between is not calculated properly</pre>
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.GetDateTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.GetDateTests.
+<pre>
+[ RUN      ] DateTest.GetDateTests
+./date_unittest.cc:106: Failure
+      Expected: tdate1.GetDate()
+      Which is: "2018-09-04"
+To be equal to: "09-04-2018"
+./date_unittest.cc:107: Failure
+      Expected: tdate2.GetDate()
+      Which is: "2018-12-11"
+To be equal to: "12-11-2018"</pre>
 
 
 
@@ -77,8 +94,15 @@ Run on February 22, 18:46:25 PM.
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.DateCurrentTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.DateCurrentTests.
+<pre>
+[ RUN      ] DateTest.DateCurrentTests
+./date_unittest.cc:146: Failure
+      Expected: current.GetUsDate()
+      Which is: "02-22-2020"
+To be equal to: expected_out_1
+      Which is: "2-22-2020"</pre>
 
 
 
@@ -102,7 +126,7 @@ Run on February 22, 18:46:25 PM.
 
 
 
-+ Pass: 100.0% of the tests passed. Expected at least 100%.
++ Fail: 72.73% of the tests passed, but the target is 100%.
 
 
 ### Testing Mutants
