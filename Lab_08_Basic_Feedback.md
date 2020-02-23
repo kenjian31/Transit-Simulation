@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 08
 
-Run on February 22, 19:38:55 PM.
+Run on February 22, 19:40:38 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -94,15 +94,8 @@ To be equal to: "12-11-2018"</pre>
 
 
 
-+ Fail: Check that a GoogleTest test passes.
-    fails the test: DateTest.DateCurrentTests.
-<pre>
-[ RUN      ] DateTest.DateCurrentTests
-./date_unittest.cc:146: Failure
-      Expected: current.GetUsDate()
-      Which is: "02-22-2020"
-To be equal to: expected_out_1
-      Which is: "2-22-2020"</pre>
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.DateCurrentTests.
 
 
 
@@ -126,7 +119,7 @@ To be equal to: expected_out_1
 
 
 
-+ Fail: 72.73% of the tests passed, but the target is 100%.
++ Fail: 81.82% of the tests passed, but the target is 100%.
 
 
 ### Testing Mutants
