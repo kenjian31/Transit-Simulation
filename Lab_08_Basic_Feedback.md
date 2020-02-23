@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 08
 
-Run on February 22, 21:10:43 PM.
+Run on February 22, 21:13:51 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -57,15 +57,8 @@ Run on February 22, 21:10:43 PM.
 
 
 
-+ Fail: Check that a GoogleTest test passes.
-    fails the test: DateTest.DaysBetweenTests.
-<pre>
-[ RUN      ] DateTest.DaysBetweenTests
-./date_unittest.cc:87: Failure
-      Expected: tdate1.DaysBetween(tdate2)
-      Which is: 60
-To be equal to: 59
-Days in 2016 between is not calculated properly</pre>
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.DaysBetweenTests.
 
 
 
@@ -74,18 +67,8 @@ Days in 2016 between is not calculated properly</pre>
 
 
 
-+ Fail: Check that a GoogleTest test passes.
-    fails the test: DateTest.GetUsDateTests.
-<pre>
-[ RUN      ] DateTest.GetUsDateTests
-./date_unittest.cc:114: Failure
-      Expected: tdate1.GetUsDate()
-      Which is: "09-04-2018"
-To be equal to: "2018-09-04"
-./date_unittest.cc:115: Failure
-      Expected: tdate2.GetUsDate()
-      Which is: "12-11-2018"
-To be equal to: "2018-12-11"</pre>
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.GetUsDateTests.
 
 
 
@@ -119,7 +102,7 @@ To be equal to: "2018-12-11"</pre>
 
 
 
-+ Fail: 81.82% of the tests passed, but the target is 100%.
++ Pass: 100.0% of the tests passed. Expected at least 100%.
 
 
 ### Testing Mutants
