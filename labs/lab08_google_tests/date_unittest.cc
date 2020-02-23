@@ -82,6 +82,8 @@ TEST_F(DateTest, PrintDateTestsWithoutNewline) {
   */
 
 TEST_F(DateTest, DaysBetweenTests) {
+  Date tdate(2016, 1, 1);
+  EXPECT_EQ(tdate.GetUsDate(), "03-01-2016") <<"Days in 2016 between is not calculated properly";
   EXPECT_EQ(first_day.GetUsDate(), "09-04-2018") << "First day of class not setup properly";
   EXPECT_EQ(last_day.GetUsDate(), "12-11-2018") << "Last day of class not setup properly";
   EXPECT_EQ(first_day.DaysBetween(last_day), 98) << "Days between is not calculated properly";
@@ -99,13 +101,17 @@ TEST(DateTest, ConvertFromDays) {
 }
 */
 TEST_F(DateTest, GetDateTests) {
-  EXPECT_EQ(first_day.GetUsDate(), "09-04-2018");
-  EXPECT_EQ(last_day.GetUsDate(), "12-11-2018");
+  Date tdate1(2018, 9, 4);
+  Date tdate2(2018, 12, 11);
+  EXPECT_EQ(tdate1.GetDate(), "09-04-2018");
+  EXPECT_EQ(tdate2.GetDate(), "12-11-2018");
 }
 
 TEST_F(DateTest, GetUsDateTests) {
-  EXPECT_EQ(first_day.GetUsDate(), "09-04-2018");
-  EXPECT_EQ(last_day.GetUsDate(), "12-11-2018");
+  Date tdate1(2018, 9, 4);
+  Date tdate2(2018, 12, 11);
+  EXPECT_EQ(tdate1.GetUsDate(), "09-04-2018");
+  EXPECT_EQ(tdate2.GetUsDate(), "12-11-2018");
 }
 
 TEST_F(DateTest, PrintUsDateTests){
@@ -135,8 +141,9 @@ TEST_F(DateTest, PrintUsDateTests){
 }
 
 TEST_F(DateTest, DateCurrentTests){
-  Date t_date(2018, 9, 4);
-  EXPECT_EQ(first_day.GetUsDate(), "09-04-2018");
+  Date current = Date();
+  std::string expected_out_1 = "2-22-2020";
+  EXPECT_EQ(current.GetUsDate(), expected_out_1);
 }
 
 TEST_F(DateTest, DateSetUpTests){
