@@ -143,8 +143,9 @@ TEST_F(DateTest, PrintUsDateTests){
 
 TEST_F(DateTest, DateCurrentTests){
   Date current = Date();
-  std::string expected_out_1 = "02-22-2020";
-  EXPECT_EQ(current.GetUsDate(), expected_out_1);
+
+  Date testd = Date();
+  EXPECT_EQ(current.GetUsDate(), testd.GetUsDate());
 }
 
 TEST_F(DateTest, DateSetUpTests){
