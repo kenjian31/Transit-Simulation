@@ -120,20 +120,20 @@ TEST_F(DateTest, PrintUsDateTests){
   Date ind_day(1776, 7, 4);            // US Independence
   Date best_holiday(2018, 10, 31);     // Halloween
 
-  std::string expected_out_1 = "1999-12-31";
-  std::string expected_out_2 = "1776-07-04";
-  std::string expected_out_3 = "2018-10-31";
+  std::string expected_out_1 = "12-31-1999";
+  std::string expected_out_2 = "07-04-1776";
+  std::string expected_out_3 = "10-31-2018";
 
   testing::internal::CaptureStdout();
-  y2k.PrintDate(false);
+  y2k.PrintUsDate(false);
   std::string output1 = testing::internal::GetCapturedStdout();
 
   testing::internal::CaptureStdout();
-  ind_day.PrintDate(false);
+  ind_day.PrintUsDate(false);
   std::string output2 = testing::internal::GetCapturedStdout();
 
   testing::internal::CaptureStdout();
-  best_holiday.PrintDate(false);
+  best_holiday.PrintUsDate(false);
   std::string output3 = testing::internal::GetCapturedStdout();
 
   EXPECT_EQ(output1, expected_out_1);
