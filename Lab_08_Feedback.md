@@ -1,6 +1,6 @@
 ### Fuller Feedback for Lab 08
 
-Run on February 24, 08:52:31 AM.
+Run on February 24, 12:00:28 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -125,8 +125,7 @@ Run on February 24, 08:52:31 AM.
 
 #### Testing Mutant 4 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - Today's date month off by one
++ Pass: At least one test failed for Mutant 4
 
 
 #### Testing Mutant 5 for failure
