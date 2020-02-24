@@ -144,7 +144,7 @@ TEST_F(DateTest, PrintUsDateTests){
 TEST_F(DateTest, DateCurrentTests){
   Date current = Date();
 
-  Date testd = Date();
+  Date testd(2020,2,24);
   EXPECT_EQ(current.GetUsDate(), testd.GetUsDate());
 }
 
