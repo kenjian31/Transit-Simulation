@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on February 28, 13:09:01 PM.
+Run on February 28, 14:44:21 PM.
 
 
 ### Necessary Files and Structure
@@ -12,34 +12,158 @@ Run on February 28, 13:09:01 PM.
 
 ### Git Usage
 
-+ Fail: Run git ls-remote to check for existence of specific branch- Branch devel not found
++ Pass: Run git ls-remote to check for existence of specific branch- Branch devel found
 
-+ Skip: Checkout devel branch.
++ Pass: Checkout devel branch.
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Run git ls-remote gather all branches in repo
 
-  This test was not run because of an earlier failing test.
++ Pass: Run git ls-remote gather all branches in repo
 
-+ Skip: Checking for the correct number of branches
+		aed6f661cb21caebc7efff6194027953408cf3ef	refs/heads/devel
 
-  This test was not run because of an earlier failing test.
+		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/fix/01-compilation-errors
+
+		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/master
+
+
+
++ Pass: Checking for the correct number of branches
+
+Insufficient branches found (found=1, required=2):
+
+fix/01-compilation-errors
 
 
 #### Counting commits on devel
 
-+ Skip: Checkout devel branch.
++ Pass: Checkout devel branch.
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Gather commit history
 
-  This test was not run because of an earlier failing test.
++ Pass: Gather commit history
 
-+ Skip: Check git commit history
+		[Jian Wang] 2020-02-28 (HEAD -> devel, origin/devel) lab10 complete 
 
-  This test was not run because of an earlier failing test.
+		[Jian Wang] 2020-02-28 Merge branch 'fix/01-compilation-errors' into devel 
+
+		[Jian Wang] 2020-02-28 (origin/master, origin/fix/01-compilation-errors, origin/HEAD, master, fix/01-compilation-errors) lab10 replace 
+
+		[Jian Wang] 2020-02-28 lab10 src delete 
+
+		[Jian Wang] 2020-02-28 replace src 
+
+		[Jian Wang] 2020-02-28 delete src 
+
+
+
+		[Jian Wang] 2020-02-28 lab09 
+
+		[Jian Wang] 2020-02-28 lab09 
+
+
+
+
+
+
+
+		[Jian Wang] 2020-02-24 Merge branch 'support-code' of github.umn.edu:umn-csci-3081-s20/csci3081-shared-upstream 
+
+
+
+
+
+
+
+
+		[Jian Wang] 2020-02-24 fixed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		[Jian Wang] 2020-02-22 lab08 fix 
+
+
+
+		[Jian Wang] 2020-02-22 lab08 fixed 
+
+
+		[Jian Wang] 2020-02-22 fixed 
+
+
+		[Jian Wang] 2020-02-22 fixed 
+
+
+
+		[Jian Wang] 2020-02-22 fixed 
+
+
+		[Jian Wang] 2020-02-22 Merge branch 'master' of https://github.umn.edu/umn-csci-3081-s20/repo-wang8635 
+
+		[Jian Wang] 2020-02-22 fixed 
+
+
+		[Jian Wang] 2020-02-22 fixed 
+
+
+
+		[Jian Wang] 2020-02-22 lab08 google test complete 
+
+		[Jian Wang] 2020-02-22 Merge branch 'master' of https://github.umn.edu/umn-csci-3081-s20/repo-wang8635 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		[Jian Wang] 2020-02-20 Merge branch 'support-code' 
+
+		[Jian Wang] 2020-02-20 Merge branch 'support-code' of github.umn.edu:umn-csci-3081-s20/csci3081-shared-upstream into support-code 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++ Pass: Check git commit history
+Sufficient commits (found=22,required=4)
 
 
 ### Git Issue Usage
@@ -48,13 +172,23 @@ Run on February 28, 13:09:01 PM.
 
 + Pass: Run ghi for total number of open issues in Github repo (Found: 0)
 
-+ Pass: Run ghi for total number of closed issues in Github repo (Found: 0)
++ Pass: Run ghi for total number of closed issues in Github repo (Found: 2)
 
-+ Fail: Run ghi for total number of issues in Github repo (Found: 0, Expected: 2) 
+[CLOSED issue #2] :  google style [enhancement]
+
+[CLOSED issue #1] :  cpplint compilation  [bug] 1
+
+
+
+
+
++ Pass: Run ghi for total number of issues in Github repo (Found: 2, Expected: 2) 
 
  [OPEN issue #] : 
 
-[CLOSED issue #] : 
+[CLOSED issue #2] :  google style [enhancement]
+
+[CLOSED issue #1] :  cpplint compilation  [bug] 1
 
  
 
@@ -63,26 +197,36 @@ Run on February 28, 13:09:01 PM.
 
 ### Test that code on  devel compiles
 
-+ Fail: Checkout devel branch.
++ Pass: Checkout devel branch.
 
-<pre>error: pathspec 'devel' did not match any file(s) known to git.
+
+
++ Pass: Check that directory "project/src" exists.
+
++ Pass: Change into directory "project/src".
+
++ Pass: Check that file "makefile" exists.
+
++ Fail: Check that make compiles.
+
+    Make compile fails with errors:.
+<pre>==== Auto-Generating Dependencies for passenger_factory.cc. ====
+==== Compiling passenger_factory.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_factory.o. ====
+==== Auto-Generating Dependencies for bus.cc. ====
+==== Compiling bus.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o. ====
+bus.cc: In member function int Bus::UnloadPassengers():
+bus.cc:169:54: error: no matching function for call to PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>&, Stop*&)
+   unloader_->UnloadPassengers(passengers_, next_stop_);
+                                                      ^
+In file included from ../src/bus.h:17:0,
+                 from bus.cc:6:
+../src/passenger_unloader.h:18:7: note: candidate: int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>*, Stop*)
+   int UnloadPassengers(std::list<Passenger*>*  passengers,
+       ^~~~~~~~~~~~~~~~
+../src/passenger_unloader.h:18:7: note:   no known conversion for argument 1 from std::__cxx11::list<Passenger*> to std::__cxx11::list<Passenger*>*
+makefile:102: recipe for target '/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o' failed
+make: *** [/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o] Error 1
 </pre>
 
 
-
-+ Skip: Check that directory "project/src" exists.
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Change into directory "project/src".
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that file "makefile" exists.
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that make compiles.
-
-  This test was not run because of an earlier failing test.
 
