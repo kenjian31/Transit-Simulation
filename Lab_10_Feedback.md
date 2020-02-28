@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on February 28, 14:49:42 PM.
+Run on February 28, 14:52:21 PM.
 
 
 ### Necessary Files and Structure
@@ -20,11 +20,11 @@ Run on February 28, 14:49:42 PM.
 
 + Pass: Run git ls-remote gather all branches in repo
 
-		26c29a0547f41c9d2d2c965de77cd76d9dc7ef7d	refs/heads/devel
+		91b1fc418588a97d49e36ad2045b875df71a8fee	refs/heads/devel
 
 		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/fix/01-compilation-errors
 
-		b8226abce303f3ade971490a281b18aedb586370	refs/heads/master
+		da94dd27619650bce9a73d935794fd569c66c25d	refs/heads/master
 
 
 
@@ -44,6 +44,8 @@ fix/01-compilation-errors
 + Pass: Gather commit history
 
 		[Jian Wang] 2020-02-28 (HEAD -> devel, origin/devel) lab10 complete 
+
+		[Jian Wang] 2020-02-28 lab10 complete 
 
 		[Jian Wang] 2020-02-28 lab10 complete 
 
@@ -167,7 +169,7 @@ fix/01-compilation-errors
 
 
 + Pass: Check git commit history
-Sufficient commits (found=24,required=4)
+Sufficient commits (found=25,required=4)
 
 
 ### Git Issue Usage
@@ -216,12 +218,27 @@ Sufficient commits (found=24,required=4)
     Make compile fails with errors:.
 <pre>==== Auto-Generating Dependencies for bus.cc. ====
 ==== Compiling bus.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o. ====
-bus.cc: In member function int Bus::UnloadPassengers():
-bus.cc:169:31: error: no match for operator* (operand type is std::__cxx11::list<Passenger*>)
-   unloader_->UnloadPassengers(* passengers_, next_stop_);
-                               ^~~~~~~~~~~~~
-makefile:102: recipe for target '/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o' failed
-make: *** [/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o] Error 1
+==== Auto-Generating Dependencies for random_passenger_generator.cc. ====
+==== Compiling random_passenger_generator.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/random_passenger_generator.o. ====
+==== Auto-Generating Dependencies for passenger_loader.cc. ====
+==== Compiling passenger_loader.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_loader.o. ====
+==== Auto-Generating Dependencies for passenger_factory.cc. ====
+==== Compiling passenger_factory.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_factory.o. ====
+==== Auto-Generating Dependencies for passenger.cc. ====
+==== Compiling passenger.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger.o. ====
+==== Auto-Generating Dependencies for passenger_generator.cc. ====
+==== Compiling passenger_generator.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_generator.o. ====
+==== Auto-Generating Dependencies for passenger_unloader.cc. ====
+==== Compiling passenger_unloader.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o. ====
+passenger_unloader.cc:8:5: error: prototype for int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>&, Stop*) does not match any in class PassengerUnloader
+ int PassengerUnloader::UnloadPassengers(std::list<Passenger *>& passengers,
+     ^~~~~~~~~~~~~~~~~
+In file included from passenger_unloader.cc:6:0:
+../src/passenger_unloader.h:18:7: error: candidate is: int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>*, Stop*)
+   int UnloadPassengers(std::list<Passenger*>* passengers,
+       ^~~~~~~~~~~~~~~~
+makefile:102: recipe for target '/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o' failed
+make: *** [/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o] Error 1
 </pre>
 
 
