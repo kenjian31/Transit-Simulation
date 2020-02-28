@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on February 28, 14:52:21 PM.
+Run on February 28, 14:55:44 PM.
 
 
 ### Necessary Files and Structure
@@ -20,11 +20,11 @@ Run on February 28, 14:52:21 PM.
 
 + Pass: Run git ls-remote gather all branches in repo
 
-		91b1fc418588a97d49e36ad2045b875df71a8fee	refs/heads/devel
+		ad5014e3854cb521d91c6eed93b10e56216e984b	refs/heads/devel
 
 		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/fix/01-compilation-errors
 
-		da94dd27619650bce9a73d935794fd569c66c25d	refs/heads/master
+		4be9ba66c2d7b25a1e58abc56994b6d4fba897f4	refs/heads/master
 
 
 
@@ -44,6 +44,8 @@ fix/01-compilation-errors
 + Pass: Gather commit history
 
 		[Jian Wang] 2020-02-28 (HEAD -> devel, origin/devel) lab10 complete 
+
+		[Jian Wang] 2020-02-28 lab10 complete 
 
 		[Jian Wang] 2020-02-28 lab10 complete 
 
@@ -169,7 +171,7 @@ fix/01-compilation-errors
 
 
 + Pass: Check git commit history
-Sufficient commits (found=25,required=4)
+Sufficient commits (found=26,required=4)
 
 
 ### Git Issue Usage
@@ -230,13 +232,16 @@ Sufficient commits (found=25,required=4)
 ==== Compiling passenger_generator.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_generator.o. ====
 ==== Auto-Generating Dependencies for passenger_unloader.cc. ====
 ==== Compiling passenger_unloader.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o. ====
-passenger_unloader.cc:8:5: error: prototype for int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>&, Stop*) does not match any in class PassengerUnloader
- int PassengerUnloader::UnloadPassengers(std::list<Passenger *>& passengers,
-     ^~~~~~~~~~~~~~~~~
-In file included from passenger_unloader.cc:6:0:
-../src/passenger_unloader.h:18:7: error: candidate is: int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>*, Stop*)
-   int UnloadPassengers(std::list<Passenger*>* passengers,
-       ^~~~~~~~~~~~~~~~
+passenger_unloader.cc: In member function int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>*, Stop*):
+passenger_unloader.cc:13:57: error: request for member begin in passengers, which is of pointer type std::__cxx11::list<Passenger*>* (maybe you meant to use -> ?)
+   for (std::list<Passenger *>::iterator it = passengers.begin();
+                                                         ^~~~~
+passenger_unloader.cc:14:24: error: request for member end in passengers, which is of pointer type std::__cxx11::list<Passenger*>* (maybe you meant to use -> ?)
+       it != passengers.end();
+                        ^~~
+passenger_unloader.cc:20:23: error: request for member erase in passengers, which is of pointer type std::__cxx11::list<Passenger*>* (maybe you meant to use -> ?)
+       it = passengers.erase(it);
+                       ^~~~~
 makefile:102: recipe for target '/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o' failed
 make: *** [/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o] Error 1
 </pre>
