@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on February 28, 14:44:21 PM.
+Run on February 28, 14:49:42 PM.
 
 
 ### Necessary Files and Structure
@@ -20,11 +20,11 @@ Run on February 28, 14:44:21 PM.
 
 + Pass: Run git ls-remote gather all branches in repo
 
-		aed6f661cb21caebc7efff6194027953408cf3ef	refs/heads/devel
+		26c29a0547f41c9d2d2c965de77cd76d9dc7ef7d	refs/heads/devel
 
 		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/fix/01-compilation-errors
 
-		0e48e60bfa35a5ca23c5b86d06e3d23db8e9f8bf	refs/heads/master
+		b8226abce303f3ade971490a281b18aedb586370	refs/heads/master
 
 
 
@@ -45,9 +45,13 @@ fix/01-compilation-errors
 
 		[Jian Wang] 2020-02-28 (HEAD -> devel, origin/devel) lab10 complete 
 
+		[Jian Wang] 2020-02-28 lab10 complete 
+
+		[Jian Wang] 2020-02-28 lab10 complete 
+
 		[Jian Wang] 2020-02-28 Merge branch 'fix/01-compilation-errors' into devel 
 
-		[Jian Wang] 2020-02-28 (origin/master, origin/fix/01-compilation-errors, origin/HEAD, master, fix/01-compilation-errors) lab10 replace 
+		[Jian Wang] 2020-02-28 (origin/fix/01-compilation-errors, fix/01-compilation-errors) lab10 replace 
 
 		[Jian Wang] 2020-02-28 lab10 src delete 
 
@@ -163,7 +167,7 @@ fix/01-compilation-errors
 
 
 + Pass: Check git commit history
-Sufficient commits (found=22,required=4)
+Sufficient commits (found=24,required=4)
 
 
 ### Git Issue Usage
@@ -210,20 +214,12 @@ Sufficient commits (found=22,required=4)
 + Fail: Check that make compiles.
 
     Make compile fails with errors:.
-<pre>==== Auto-Generating Dependencies for passenger_factory.cc. ====
-==== Compiling passenger_factory.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_factory.o. ====
-==== Auto-Generating Dependencies for bus.cc. ====
+<pre>==== Auto-Generating Dependencies for bus.cc. ====
 ==== Compiling bus.cc into /project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o. ====
 bus.cc: In member function int Bus::UnloadPassengers():
-bus.cc:169:54: error: no matching function for call to PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>&, Stop*&)
-   unloader_->UnloadPassengers(passengers_, next_stop_);
-                                                      ^
-In file included from ../src/bus.h:17:0,
-                 from bus.cc:6:
-../src/passenger_unloader.h:18:7: note: candidate: int PassengerUnloader::UnloadPassengers(std::__cxx11::list<Passenger*>*, Stop*)
-   int UnloadPassengers(std::list<Passenger*>*  passengers,
-       ^~~~~~~~~~~~~~~~
-../src/passenger_unloader.h:18:7: note:   no known conversion for argument 1 from std::__cxx11::list<Passenger*> to std::__cxx11::list<Passenger*>*
+bus.cc:169:31: error: no match for operator* (operand type is std::__cxx11::list<Passenger*>)
+   unloader_->UnloadPassengers(* passengers_, next_stop_);
+                               ^~~~~~~~~~~~~
 makefile:102: recipe for target '/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o' failed
 make: *** [/project/grades/Spring-2020/csci3081/student-repos/Lab_10_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o] Error 1
 </pre>
