@@ -211,6 +211,9 @@ If you are addressing one of the priority points, follow this full process of is
 
 ---
 
+
+
+
 ### Note on feedback regeneration
 
 To trigger a feedback regeneration for this lab, you must modify a (any) file in `labs/lab10_advanced_git`.
