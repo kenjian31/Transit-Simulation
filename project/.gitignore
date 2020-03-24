@@ -1,5 +1,6 @@
 # Ignore the build directory.
 build
-
+latex
+html
 # OSX automatically includes these, so ignore them as well.
 .DS_Store
