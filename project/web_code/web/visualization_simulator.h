@@ -11,6 +11,7 @@
 class Route;
 class Bus;
 class Stop;
+class BusFactory;
 
 class VisualizationSimulator {
     public:
@@ -20,10 +21,17 @@ class VisualizationSimulator {
         void Start(const std::vector<int>&, const int&);
         void Update();
 
+        /**
+				* @brief represent exection of pause flag to identif whether pause or resume.
+				*
+				*
+				*/
+        void Pause();
+
     private:
         WebInterface* webInterface_;
         ConfigManager* configManager_;
-       
+
         std::vector<int> busStartTimings_;
         std::vector<int> timeSinceLastBus_;
         int numTimeSteps_;
@@ -31,7 +39,7 @@ class VisualizationSimulator {
 
         std::vector<Route *> prototypeRoutes_;
         std::vector<Bus *> busses_;
-
+        bool flag = false;
         int busId = 1000;
 };
 

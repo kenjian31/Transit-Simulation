@@ -11,10 +11,12 @@ int PassengerLoader::LoadPassenger(Passenger * new_passenger, int max_pass,
   // using count of those added_passenger
   // Currently, only one could be added, so possible values are 0 or 1.
   int added_passenger = 0;
+  // bool added = false;
   if (static_cast<int>((*passengers).size()) < max_pass) {
     (*passengers).push_back(new_passenger);
     new_passenger->GetOnBus();
     added_passenger = 1;
+    // added = true;
   }
   return added_passenger;
 }
