@@ -8,16 +8,16 @@
 #include "src/large_bus.h"
 
 LargeBus::LargeBus(std::string name, Route * out, Route * in,
-  int capacity, double speed): Bus(name, out, in, 90, speed){
+  int capacity, double speed): Bus(name, out, in, 90, speed) {
     name_ = name;
     outgoing_route_ = out;
     incoming_route_ = in;
     passenger_max_capacity_ = 90;
     speed_ = 0.5;
-  };
+}
 
-  void LargeBus::Report(std::ostream& out) {
+void LargeBus::Report(std::ostream& out) {
     out << "Name: " << name_ << std::endl;
     out << "Speed: " << speed_ << std::endl;
     out << "Size: " << passenger_max_capacity_ << std::endl;
-  }
+}
