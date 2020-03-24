@@ -65,5 +65,33 @@ class InitRoutesCommand : public MyWebServerCommand {
     private:
         ConfigManager* cm;
 };
+/**
+ * @brief The main class represent pause/resume batton.
+ *
+ * Calls to \ref PauseCommand to implement pause on the web
+ */
+class PauseCommand : public MyWebServerCommand {
+    public:
+			/**
+			* @brief this class represent of pause batton.
+			*
+			* @param[in] VisualizationSimulator* sim, left bound (not-inclusive)
+			*
+			*/
+        PauseCommand(VisualizationSimulator* sim);
+				/**
+				* @brief this class represent exection of pause batton.
+				*
+				* @param[in] sim, left bound (not-inclusive)
+				* @param[in] command, left bound (not-inclusive)
+				* @param[in] state, left bound (not-inclusive)
+				*
+				*/
+        void execute(MyWebServerSession* session, picojson::value& command, MyWebServerSessionState* state) override;
+    private:
+        VisualizationSimulator* mySim;
+        std::vector<int> timeBetweenBusses;
+        int numTimeSteps;
+};
 
 #endif // MY_WEB_SERVER_COMMAND_H

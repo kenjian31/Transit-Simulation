@@ -3,7 +3,9 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
+#include <vector>
 #include "src/route.h"
+
 
 Route::Route(std::string name, Stop ** stops, double * distances, int num_stops,
                                                PassengerGenerator * generator) {
@@ -87,7 +89,7 @@ Stop * Route::PrevStop() {
     }
 }
 
-void Route::NextStop() {
+void Route::ToNextStop() {
   destination_stop_index_++;
 
   if (destination_stop_index_ < num_stops_) {

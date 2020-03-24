@@ -1,0 +1,101 @@
+\hypertarget{classLargeBus}{}\section{Large\+Bus Class Reference}
+\label{classLargeBus}\index{Large\+Bus@{Large\+Bus}}
+
+
+The main class for the generation of regular bus.  
+
+
+
+
+{\ttfamily \#include $<$large\+\_\+bus.\+h$>$}
+
+
+
+Inheritance diagram for Large\+Bus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classLargeBus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Large\+Bus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classLargeBus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLargeBus_a17f3647b231039dbc42b006e51a43aa9}{Large\+Bus} (std\+::string name, \hyperlink{classRoute}{Route} $\ast$out, \hyperlink{classRoute}{Route} $\ast$in, int capacity, double speed)
+\begin{DoxyCompactList}\small\item\em this class represent of generateor which randomly generate regular bus. \end{DoxyCompactList}\item 
+void \hyperlink{classLargeBus_a401d909a31f2adf60b2f92681a2541d0}{Report} (std\+::ostream \&)
+\begin{DoxyCompactList}\small\item\em this class represent of generate 3 number that relate to 3 different buses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main class for the generation of regular bus. 
+
+Calls to Generate function to get a new instance of a bus. This is a static call, not requiring an instance to invoke the method. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLargeBus_a17f3647b231039dbc42b006e51a43aa9}\label{classLargeBus_a17f3647b231039dbc42b006e51a43aa9}} 
+\index{Large\+Bus@{Large\+Bus}!Large\+Bus@{Large\+Bus}}
+\index{Large\+Bus@{Large\+Bus}!Large\+Bus@{Large\+Bus}}
+\subsubsection{\texorpdfstring{Large\+Bus()}{LargeBus()}}
+{\footnotesize\ttfamily Large\+Bus\+::\+Large\+Bus (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\hyperlink{classRoute}{Route} $\ast$}]{out,  }\item[{\hyperlink{classRoute}{Route} $\ast$}]{in,  }\item[{int}]{capacity,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+this class represent of generateor which randomly generate regular bus. 
+
+This function will be used for simulation purposes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & bus id, left bound (not-\/inclusive) \\
+\hline
+\mbox{\tt in}  & {\em out} & outgoing route, right bound (inclusive) \\
+\hline
+\mbox{\tt in}  & {\em in} & incoming route, left bound (not-\/inclusive) \\
+\hline
+\mbox{\tt in}  & {\em capacity} & capacity of bus, right bound (inclusive) \\
+\hline
+\mbox{\tt in}  & {\em speed} & Speed of bus, left bound (not-\/inclusive)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classBus}{Bus} object with bus id, outgoing route, incoming route, regular capacity, speed. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLargeBus_a401d909a31f2adf60b2f92681a2541d0}\label{classLargeBus_a401d909a31f2adf60b2f92681a2541d0}} 
+\index{Large\+Bus@{Large\+Bus}!Report@{Report}}
+\index{Report@{Report}!Large\+Bus@{Large\+Bus}}
+\subsubsection{\texorpdfstring{Report()}{Report()}}
+{\footnotesize\ttfamily void Large\+Bus\+::\+Report (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+
+
+this class represent of generate 3 number that relate to 3 different buses. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em std\+::ostream\&,left} & bound (not-\/inclusive)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+output bus detail. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/wang8635/3081\+\_\+s20/repo-\/wang8635/project/src/large\+\_\+bus.\+h\item 
+/home/wang8635/3081\+\_\+s20/repo-\/wang8635/project/src/large\+\_\+bus.\+cc\end{DoxyCompactItemize}
