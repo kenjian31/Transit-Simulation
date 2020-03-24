@@ -93,11 +93,10 @@ bool Bus::Move() {
 
                 Stop * stops;
                 stops = current_route->GetDestinationStop();
-                if(stops->GetNumPassengersPresent() == 0) {
+                if (stops->GetNumPassengersPresent() == 0) {
                   current_route->ToNextStop();
                   current_route->ToNextStop();
-                }
-                else {
+                } else {
                   current_route->ToNextStop();
                 }
                 // current_route->ToNextStop();
@@ -131,11 +130,10 @@ bool Bus::Move() {
 
         Stop * stop1;
         stop1 = current_route->GetDestinationStop();
-        if(stop1->GetNumPassengersPresent() == 0) {
+        if (stop1->GetNumPassengersPresent() == 0) {
           current_route->ToNextStop();
           current_route->ToNextStop();
-        }
-        else {
+        } else {
           current_route->ToNextStop();
         }
         // current_route->ToNextStop();
