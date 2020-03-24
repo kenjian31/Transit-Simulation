@@ -8,7 +8,7 @@
 #include "src/large_bus.h"
 
 LargeBus::LargeBus(std::string name, Route * out, Route * in,
-  int capacity, double speed): Bus(name, out, in, 90, speed) {
+  int capacity, double speed): Bus(name, out, in, capacity = 90, speed = 0.5) {
     name_ = name;
     outgoing_route_ = out;
     incoming_route_ = in;
