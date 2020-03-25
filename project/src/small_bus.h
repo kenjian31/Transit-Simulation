@@ -17,7 +17,8 @@
 class SmallBus: public Bus {
  public:
       /**
-       * @brief this class represent of generateor which randomly generate small bus.
+       * @brief this class represent of generateor which randomly generate small bus
+       * with capacity 30 and speed 0.5.
        *
        * This function will be used for simulation purposes.
        *
