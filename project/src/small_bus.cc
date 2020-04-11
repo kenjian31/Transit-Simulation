@@ -8,7 +8,12 @@
 #include "src/small_bus.h"
 
 SmallBus::SmallBus(std::string name, Route * out, Route * in,
+<<<<<<< HEAD
   int capacity, double speed) : Bus(name, out, in, 30, speed)   {
+=======
+  int capacity, double speed) :
+  Bus(name, out, in, capacity = 30, speed = 0.5)   {
+>>>>>>> new
     name_ = name;
     outgoing_route_ = out;
     incoming_route_ = in;

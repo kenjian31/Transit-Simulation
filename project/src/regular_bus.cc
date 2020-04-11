@@ -8,7 +8,11 @@
 #include "src/regular_bus.h"
 
 RegularBus::RegularBus(std::string name, Route * out, Route * in,
+<<<<<<< HEAD
    int capacity, double speed): Bus(name, out, in, 60, speed) {
+=======
+   int capacity, double speed): Bus(name, out, in, capacity = 60, speed = 0.5) {
+>>>>>>> new
      name_ = name;
      outgoing_route_ = out;
      incoming_route_ = in;
