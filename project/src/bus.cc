@@ -4,7 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 #include "src/bus.h"
-
+#include "src/iobservable.h"
+#include "src/iobserver.h"
 Bus::Bus(std::string name, Route * out, Route * in,
                          int capacity, double speed) {
   name_ = name;
