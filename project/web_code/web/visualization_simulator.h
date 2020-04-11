@@ -1,12 +1,13 @@
 
 #ifndef VISUALIZATION_SIMULATOR_H_
 #define VISUALIZATION_SIMULATOR_H_
-
+#include <string>
 #include <vector>
 #include <list>
 
 #include "web_interface.h"
 #include "config_manager.h"
+#include "iobservable.h"
 
 class Route;
 class Bus;
@@ -27,6 +28,8 @@ class VisualizationSimulator {
 				*
 				*/
         void Pause();
+        void ClearListeners();
+        void AddListener(std::string*, IObserver*);
 
     private:
         WebInterface* webInterface_;
