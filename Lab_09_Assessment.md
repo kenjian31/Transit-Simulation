@@ -1,11 +1,13 @@
-### Feedback for Lab 09
+### Assessment for Lab 09
 
-Run on March 02, 12:24:54 PM.
+#### Total score: _60_ / _100_
+
+Run on March 03, 10:45:40 AM.
 
 
 #### Necessary Files and Structure
 
-+ Pass: Check that directory "project" exists.
++  _40_ / _40_ : Pass: Check that directory "project" exists.
 
 + Pass: Change into directory "project".
 
@@ -28,59 +30,59 @@ Run on March 02, 12:24:54 PM.
 
 + Pass: Check that file/directory "build" does not exist.
 
-+ Pass: Check that file/directory "build/bin/vis_sim" does not exist.
++  _20_ / _20_ : Pass: Check that file/directory "build/bin/vis_sim" does not exist.
 
 
 #### Compile Tests
 
 + Pass: Change into directory "src".
 
-+ Fail: Check that make compiles.
++  _0_ / _30_ : Fail: Check that make compiles.
 
     Make compile fails with errors:.
-<pre>==== Auto-Generating Dependencies for bus.cc. ====
-==== Compiling bus.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o. ====
+<pre>==== Auto-Generating Dependencies for passenger_factory.cc. ====
+==== Compiling passenger_factory.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/passenger_factory.o. ====
+==== Auto-Generating Dependencies for bus.cc. ====
+==== Compiling bus.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/bus.o. ====
 ==== Auto-Generating Dependencies for random_passenger_generator.cc. ====
-==== Compiling random_passenger_generator.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/random_passenger_generator.o. ====
+==== Compiling random_passenger_generator.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/random_passenger_generator.o. ====
 ==== Auto-Generating Dependencies for passenger_loader.cc. ====
-==== Compiling passenger_loader.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_loader.o. ====
-==== Auto-Generating Dependencies for passenger_factory.cc. ====
-==== Compiling passenger_factory.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_factory.o. ====
+==== Compiling passenger_loader.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/passenger_loader.o. ====
 ==== Auto-Generating Dependencies for passenger.cc. ====
-==== Compiling passenger.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger.o. ====
+==== Compiling passenger.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/passenger.o. ====
 ==== Auto-Generating Dependencies for passenger_generator.cc. ====
-==== Compiling passenger_generator.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_generator.o. ====
+==== Compiling passenger_generator.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/passenger_generator.o. ====
 ==== Auto-Generating Dependencies for passenger_unloader.cc. ====
-==== Compiling passenger_unloader.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o. ====
+==== Compiling passenger_unloader.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/passenger_unloader.o. ====
 ==== Auto-Generating Dependencies for route.cc. ====
-==== Compiling route.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/route.o. ====
+==== Compiling route.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/route.o. ====
 ==== Auto-Generating Dependencies for config_manager.cc. ====
-==== Compiling config_manager.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/config_manager.o. ====
+==== Compiling config_manager.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/config_manager.o. ====
 ==== Auto-Generating Dependencies for stop.cc. ====
-==== Compiling stop.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/stop.o. ====
-==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp. ====
-==== Compiling /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/webobj/visualizer_sim/main.o. ====
+==== Compiling stop.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/stop.o. ====
+==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp. ====
+==== Compiling /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/webobj/visualizer_sim/main.o. ====
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:544:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h: In function const lws_dll2_owner* lws_dll2_owner(const lws_dll2*):
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h:271:40: warning: const lws_dll2_owner* lws_dll2_owner(const lws_dll2*) hides constructor for struct lws_dll2_owner [-Wshadow]
  lws_dll2_owner(const struct lws_dll2 *d) { return d->owner; }
                                         ^
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:563:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h:126:37: warning: lws_tokenize_elem lws_tokenize(lws_tokenize*) hides constructor for struct lws_tokenize [-Wshadow]
  lws_tokenize(struct lws_tokenize *ts);
                                      ^
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: In member function virtual void WebServerBase::Session::receiveMessage(const string&):
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:17:50: warning: unused parameter msg [-Wunused-parameter]
    virtual void receiveMessage(const std::string& msg) {}
@@ -93,9 +95,9 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
   STATE state;
         ^~~~~
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:55:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h: In member function bool picojson::value::evaluate_as_boolean() const:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:424:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
      return u_.number_ != 0;
@@ -111,9 +113,9 @@ In file included from /classes/grades/Fall-2019/csci3081/project/external/includ
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:1125:3: note: in expansion of macro PICOJSON_CMP
    PICOJSON_CMP(double);
    ^~~~~~~~~~~~
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:65:7: warning: virtual void JSONSession::receiveMessage(const string&) can be marked override [-Wsuggest-override]
   void receiveMessage(const std::string& msg) {
@@ -122,11 +124,11 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:59:44: warning: unused parameter val [-Wunused-parameter]
   virtual void receiveJSON(picojson::value& val) {}
                                             ^~~
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:7:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:7:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: In instantiation of class WebServerWithState<MyWebServerSession, MyWebServerSessionState>:
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:37:74:   required from here
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:37:74:   required from here
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:49:11: warning: WebServerBase::Session* WebServerWithState<T, STATE>::createSession() [with T = MyWebServerSession; STATE = MyWebServerSessionState] can be marked override [-Wsuggest-override]
   Session* createSession() { return new T(state); }
            ^~~~~~~~~~~~~
@@ -137,36 +139,36 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
   Session* createSession() { return new T(state); }
            ^~~~~~~~~~~~~
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: In instantiation of WebServerWithState<T, STATE>::WebServerWithState(STATE, int) [with T = MyWebServerSession; STATE = MyWebServerSessionState]:
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/main.cpp:37:85:   required from here
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/main.cpp:37:85:   required from here
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:47:2: warning: declaration of state shadows a member of WebServerWithState<MyWebServerSession, MyWebServerSessionState> [-Wshadow]
   WebServerWithState(STATE state, int port = 8081) : WebServerBase(port), state(state) {}
   ^~~~~~~~~~~~~~~~~~
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:51:8: note: shadowed declaration is here
   STATE state;
         ^~~~~
-==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc. ====
-==== Compiling /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server_command.o. ====
+==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc. ====
+==== Compiling /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server_command.o. ====
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:544:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h: In function const lws_dll2_owner* lws_dll2_owner(const lws_dll2*):
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h:271:40: warning: const lws_dll2_owner* lws_dll2_owner(const lws_dll2*) hides constructor for struct lws_dll2_owner [-Wshadow]
  lws_dll2_owner(const struct lws_dll2 *d) { return d->owner; }
                                         ^
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:563:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h:126:37: warning: lws_tokenize_elem lws_tokenize(lws_tokenize*) hides constructor for struct lws_tokenize [-Wshadow]
  lws_tokenize(struct lws_tokenize *ts);
                                      ^
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: In member function virtual void WebServerBase::Session::receiveMessage(const string&):
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:17:50: warning: unused parameter msg [-Wunused-parameter]
    virtual void receiveMessage(const std::string& msg) {}
@@ -179,9 +181,9 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
   STATE state;
         ^~~~~
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:55:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h: In member function bool picojson::value::evaluate_as_boolean() const:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:424:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
      return u_.number_ != 0;
@@ -197,9 +199,9 @@ In file included from /classes/grades/Fall-2019/csci3081/project/external/includ
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:1125:3: note: in expansion of macro PICOJSON_CMP
    PICOJSON_CMP(double);
    ^~~~~~~~~~~~
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.h:8,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_command.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:65:7: warning: virtual void JSONSession::receiveMessage(const string&) can be marked override [-Wsuggest-override]
   void receiveMessage(const std::string& msg) {
@@ -208,28 +210,28 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:59:44: warning: unused parameter val [-Wunused-parameter]
   virtual void receiveJSON(picojson::value& val) {}
                                             ^~~
-==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/visualization_simulator.cc. ====
-==== Compiling /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/visualization_simulator.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/webobj/visualizer_sim/visualization_simulator.o. ====
-==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc. ====
-==== Compiling /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server_session.o. ====
+==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/visualization_simulator.cc. ====
+==== Compiling /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/visualization_simulator.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/webobj/visualizer_sim/visualization_simulator.o. ====
+==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc. ====
+==== Compiling /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server_session.o. ====
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:544:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h: In function const lws_dll2_owner* lws_dll2_owner(const lws_dll2*):
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-misc.h:271:40: warning: const lws_dll2_owner* lws_dll2_owner(const lws_dll2*) hides constructor for struct lws_dll2_owner [-Wshadow]
  lws_dll2_owner(const struct lws_dll2 *d) { return d->owner; }
                                         ^
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets.h:563:0,
                  from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:6,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/websockets/libwebsockets/lws-tokenize.h:126:37: warning: lws_tokenize_elem lws_tokenize(lws_tokenize*) hides constructor for struct lws_tokenize [-Wshadow]
  lws_tokenize(struct lws_tokenize *ts);
                                      ^
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: In member function virtual void WebServerBase::Session::receiveMessage(const string&):
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:17:50: warning: unused parameter msg [-Wunused-parameter]
    virtual void receiveMessage(const std::string& msg) {}
@@ -242,8 +244,8 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
   STATE state;
         ^~~~~
 In file included from /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:55:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h: In member function bool picojson::value::evaluate_as_boolean() const:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:424:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
      return u_.number_ != 0;
@@ -259,8 +261,8 @@ In file included from /classes/grades/Fall-2019/csci3081/project/external/includ
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/picojson.h:1125:3: note: in expansion of macro PICOJSON_CMP
    PICOJSON_CMP(double);
    ^~~~~~~~~~~~
-In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
-                 from /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
+In file included from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.h:5:0,
+                 from /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server_session.cc:2:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h: At global scope:
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:65:7: warning: virtual void JSONSession::receiveMessage(const string&) can be marked override [-Wsuggest-override]
   void receiveMessage(const std::string& msg) {
@@ -269,17 +271,17 @@ In file included from /project/grades/Spring-2020/csci3081/ungxx028/grading-envi
 /classes/grades/Fall-2019/csci3081/project/external/include/cppwebserver/WebServer.h:59:44: warning: unused parameter val [-Wunused-parameter]
   virtual void receiveJSON(picojson::value& val) {}
                                             ^~~
-==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server.cc. ====
-==== Compiling /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/web_code/web/my_web_server.cc into /project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server.o. ====
+==== Auto-Generating Dependencies for /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server.cc. ====
+==== Compiling /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/web_code/web/my_web_server.cc into /project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/webobj/visualizer_sim/my_web_server.o. ====
 ==== Linking vis_sim. ====
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/bus.o: In function `Bus::Move()':
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/src/bus.cc:49: undefined reference to `Passenger::Update()'
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/src/bus.cc:84: undefined reference to `Stop::LoadPassengers(Bus*)'
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/src/bus.cc:114: undefined reference to `Stop::LoadPassengers(Bus*)'
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/random_passenger_generator.o: In function `RandomPassengerGenerator::RandomPassengerGenerator(std::__cxx11::list<double, std::allocator<double> >, std::__cxx11::list<Stop*, std::allocator<Stop*> >)':
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/src/random_passenger_generator.cc:13: undefined reference to `vtable for RandomPassengerGenerator'
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/build/obj/transit_sim/stop.o: In function `Stop::Update()':
-/project/grades/Spring-2020/csci3081/ungxx028/grading-environment/grading-scripts/grading/Lab_09_Feedback/repo-wang8635/project/src/stop.cc:51: undefined reference to `Passenger::Update()'
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/bus.o: In function `Bus::Move()':
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/src/bus.cc:49: undefined reference to `Passenger::Update()'
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/src/bus.cc:84: undefined reference to `Stop::LoadPassengers(Bus*)'
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/src/bus.cc:114: undefined reference to `Stop::LoadPassengers(Bus*)'
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/random_passenger_generator.o: In function `RandomPassengerGenerator::RandomPassengerGenerator(std::__cxx11::list<double, std::allocator<double> >, std::__cxx11::list<Stop*, std::allocator<Stop*> >)':
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/src/random_passenger_generator.cc:13: undefined reference to `vtable for RandomPassengerGenerator'
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/build/obj/transit_sim/stop.o: In function `Stop::Update()':
+/project/grades/Spring-2020/csci3081/sherv029/grading-environment/grading-scripts/grading/Lab_09_Assessment_Section1/repo-wang8635/project/src/stop.cc:51: undefined reference to `Passenger::Update()'
 collect2: error: ld returned 1 exit status
 makefile:173: recipe for target 'vis_sim' failed
 make: *** [vis_sim] Error 1
@@ -291,7 +293,9 @@ make: *** [vis_sim] Error 1
 
   This test was not run because of an earlier failing test.
 
-+ Skip: Check that file "build/bin/vis_sim" exists.
++  _0_ / _10_ : Skip: Check that file "build/bin/vis_sim" exists.
 
   This test was not run because of an earlier failing test.
+
+#### Total score: _60_ / _100_
 

@@ -125,3 +125,17 @@ void VisualizationSimulator::Pause() {
       flag = true;
     }
 }
+
+void VisualizationSimulator::ClearListeners() {
+  for(std::vector<Bus *>::iterator iter = busses_.begin(); iter != busses_.end(); ++iter) {
+      (*iter)->ClearObservers();
+    }
+}
+
+void VisualizationSimulator::AddListener(std::string* busId, IObserver* iobserver) {
+  for(std::vector<Bus *>::iterator iter = busses_.begin(); iter != busses_.end(); ++iter) {
+    if((*iter)->GetBusData().id  == *busId) {
+      (*iter)->RegisterObserver(iobserver);
+    }
+  }
+}
