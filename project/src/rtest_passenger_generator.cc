@@ -29,16 +29,17 @@ int RtestPassengerGenerator::GeneratePassengers() {
   int last_stop_index = (*stop_iter)->GetId();  // get the last stop index
 
   std::cout << "Time to generate!" << std::endl;
+
   int count = 0;
   for (stop_iter = stops_.begin();
   (*stop_iter)->GetId() < last_stop_index; stop_iter++) {
-    stop_index = (*stop_iter)->GetId();
-    Passenger * tmp = PassengerFactory::
+stop_index = (*stop_iter)->GetId();
+
+Passenger * tmp = PassengerFactory::
                           Generate(stop_index,
                                  last_stop_index);
         passengers_added += (*stop_iter)->AddPassengers(tmp);
         count++;
   }
-
   return passengers_added;
 }

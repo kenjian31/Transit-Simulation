@@ -27,9 +27,8 @@ bool rLocalSimulator::Start() {
   std::list<Stop *> CC_SV_stops_list;
   std::list<Stop *> CC_PP_stops_list;
 
-  //  Staticly defined objects get destroyed at end of Start()!
-  //  Must be dynamic...
-
+  // Staticly defined objects get destroyed at end of Start()!
+  // Must be dynamic...
   // CC Stadium Village
   Stop * stop_CC_SV_1 = new Stop(0, 44.972392, -93.243774);  // Blegen
   Stop * stop_CC_SV_2 = new Stop(1, 44.971839, -93.222027);  // Quard
@@ -85,24 +84,23 @@ bool rLocalSimulator::Start() {
 
 
 
-  std::list<double> CC_SV_probs;  //  realistic .15, .3, .025, .05, .05, 0
-  CC_SV_probs.push_back(.15);  //  BH
-  CC_SV_probs.push_back(.35);  //  QOD
+  std::list<double> CC_SV_probs;  // realistic .15, .3, .025, .05, .05, 0
+  CC_SV_probs.push_back(.15);  // BH
+  CC_SV_probs.push_back(.35);  // QOD
   CC_SV_probs.push_back(.4);  // WH
-  CC_SV_probs.push_back(.2);  //  44N
-  CC_SV_probs.push_back(.1);  //  FTFM
+  CC_SV_probs.push_back(.2);  // 44N
+  CC_SV_probs.push_back(.1);  // FTFM
 
-  // TODO(asdsd): is this always true? If so, we may want
-  //  to reduce the length of probs to_char_type
+  // TODO(my_username): is this always true? If so, we may
+  //  want to reduce the length of probs to_char_type
   //        remove possibility of generating passengers with nowhere to go
 
-  std::list<double> CC_PP_probs;  //  realistic .35, .05, .01, .01, .2, 0
-  CC_PP_probs.push_back(.1);  //  FTFM
-  CC_PP_probs.push_back(.2);  //  44N
-  CC_PP_probs.push_back(.4);  //  WH
-  CC_PP_probs.push_back(.35);  //  QOD
-  CC_PP_probs.push_back(.15);  //  BH
-
+  std::list<double> CC_PP_probs;  // realistic .35, .05, .01, .01, .2, 0
+  CC_PP_probs.push_back(.1);  // FTFM
+  CC_PP_probs.push_back(.2);  // 44N
+  CC_PP_probs.push_back(.4);  // WH
+  CC_PP_probs.push_back(.35);  // QOD
+  CC_PP_probs.push_back(.15);  // BH
 
 
 RtestPassengerGenerator * CC_SV_generator =
@@ -110,9 +108,9 @@ RtestPassengerGenerator * CC_SV_generator =
 RtestPassengerGenerator * CC_PP_generator =
  new RtestPassengerGenerator (CC_PP_probs, CC_PP_stops_list);
 
-  Route * CC_SV = new Route("Campus Connector - Stadium Village",
+Route * CC_SV = new Route("Campus Connector - Stadium Village",
   CC_SV_stops, CC_SV_distances, 4, CC_SV_generator);
-  Route * CC_PP = new Route("Campus Connector - Prospect Park",
+Route * CC_PP = new Route("Campus Connector - Prospect Park",
   CC_PP_stops, CC_PP_distances, 4, CC_PP_generator);
 
   prototype_routes_.push_back(CC_SV);

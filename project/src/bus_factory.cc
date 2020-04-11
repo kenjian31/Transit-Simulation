@@ -12,7 +12,7 @@ int state = 0;
 Bus * BusFactory::GenerateBus(std::string name, Route * out, Route * in,
   int capacity, double speed) {
   time_t theTime = time(NULL);
-  tm *aTime = localtime_r(&theTime);
+  tm *aTime = localtime(&theTime);
   int hour = aTime->tm_hour;
   // using different capacity to determine size
   //  of bus
