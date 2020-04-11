@@ -11,9 +11,8 @@ int state = 0;
 
 Bus * BusFactory::GenerateBus(std::string name, Route * out, Route * in,
   int capacity, double speed) {
-
   time_t theTime = time(NULL);
-  tm *aTime = localtime(&theTime);
+  tm *aTime = localtime_r(&theTime);
   int hour = aTime->tm_hour;
   // using different capacity to determine size
   //  of bus
@@ -21,8 +20,7 @@ Bus * BusFactory::GenerateBus(std::string name, Route * out, Route * in,
   Bus* ptr = NULL;
 
     if (hour >= 6 && hour <= 8) {
-      if (state % 3 == 0)
-      {
+      if (state % 3 == 0) {
         ptr = new SmallBus(name, out, in, 30, speed);
         state++;
         return ptr;
@@ -51,8 +49,7 @@ Bus * BusFactory::GenerateBus(std::string name, Route * out, Route * in,
       }
 
     } else if (hour > 15 && hour <= 20) {
-      if (state % 3 == 0)
-      {
+      if (state % 3 == 0) {
         ptr = new SmallBus(name, out, in, 30, speed);
         state++;
         return ptr;

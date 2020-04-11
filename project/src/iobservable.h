@@ -1,3 +1,8 @@
+/**
+ * @file r_local_simulator.h
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
 #ifndef SRC_IOBSERVABLE_H_
 #define SRC_IOBSERVABLE_H_
 
@@ -10,12 +15,12 @@
 class IObserver;
 
 class IObservable {
-  public:
+ public:
     void RegisterObserver(IObserver *);
     void ClearObservers();
     void NotifyObservers(BusData *);
 
-  private:
+ private:
     std::vector<IObserver *> observe_;
 };
 

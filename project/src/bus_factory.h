@@ -6,8 +6,8 @@
 #ifndef SRC_BUS_FACTORY_H_
 #define SRC_BUS_FACTORY_H_
 
-#include <string>
 #include <time.h>
+#include <string>
 #include "src/bus.h"
 #include "src/small_bus.h"
 #include "src/regular_bus.h"
