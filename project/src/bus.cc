@@ -75,6 +75,7 @@ bool Bus::Move() {
         if (outgoing_route_->IsAtEnd()) {
             current_route = incoming_route_;
             if (!incoming_route_->IsAtEnd()) {
+              // bus_data_.color = Color(255, 0 , 0);
                 // Only get here if we are on our incoming route
                 passengers_handled += UnloadPassengers();  // unload
                 passengers_handled += next_stop_->LoadPassengers(this);  // load
@@ -116,6 +117,7 @@ bool Bus::Move() {
         // Only get here if we are on outgoing route
 
 
+        // bus_data_.color = Color(255, 0 , 0);
         passengers_handled += UnloadPassengers();  // unload
         passengers_handled += next_stop_->LoadPassengers(this);  // load
 
@@ -169,15 +171,25 @@ void Bus::Update() {  // using common Update format
 }
 
 void Bus::Report(std::ostream& out) {
-  out << "Name: " << name_ << std::endl;
-  out << "Speed: " << speed_ << std::endl;
-  out << "Distance to next stop: " << distance_remaining_ << std::endl;
-  out << "\tPassengers (" << passengers_.size() << "): " << std::endl;
+  out << "Name: " << name_ << "\t";
+  if(passenger_max_capacity_ == 30) {
+    out << "Type: " << "SmallBus" << "\t";
+  } else if(passenger_max_capacity_ == 60) {
+        out << "Type: " << "StandardrBus" << "\t";
+  } else {
+    out << "Type: " << "LargeBus" << "\t";
+  }
+  out << "Speed: " << speed_ << "\t";
+  out << "Distance to next stop: " << distance_remaining_ << "\t";
+  out << "Passengers (" << 0 << "): ";
+  out << "Total Num of Passengers: " << passengers_.size() << "\t";
+  out << "\n";
   for (std::list<Passenger *>::iterator it = passengers_.begin();
                                         it != passengers_.end(); it++) {
     (*it)->Report(out);
   }
 }
+
 
 
 int Bus::UnloadPassengers() {

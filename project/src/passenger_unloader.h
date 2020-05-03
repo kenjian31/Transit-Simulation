@@ -9,6 +9,9 @@
 #include <list>
 #include "src/passenger.h"
 #include "src/stop.h"
+#include "src/util.h"
+#include "src/file_writer.h"
+#include "src/file_writer_manager.h"
 class Stop;
 class Passenger;
 

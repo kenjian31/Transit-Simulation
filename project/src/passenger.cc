@@ -45,9 +45,14 @@ int Passenger::GetDestination() const {
 }
 
 void Passenger::Report(std::ostream& out) const {
-  out << "Name: " << name_ << std::endl;
-  out << "Destination: " << destination_stop_id_ << std::endl;
-  out << "Total Wait: " << GetTotalWait() << std::endl;
-  out << "\tWait at Stop: " << wait_at_stop_ << std::endl;
-  out << "\tTime on bus: " << time_on_bus_ << std::endl;
+  out << "Name: " << name_ << "\t";
+  std::cout << std::endl;
+  out << "Destination: " << destination_stop_id_<< "\t";
+  std::cout << std::endl;
+  out << "Total Wait: " << GetTotalWait() << "\t";
+  std::cout << std::endl;
+  out << "\tWait at Stop: " << wait_at_stop_ << "\t";
+  std::cout << std::endl;
+  out << "\tTime on bus: " << time_on_bus_ << "\t" << "\n";
+  std::cout << std::endl;
 }

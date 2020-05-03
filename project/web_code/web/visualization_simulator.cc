@@ -99,6 +99,11 @@ void VisualizationSimulator::Update() {
         webInterface_->UpdateBus(busses_[i]->GetBusData());
 
         busses_[i]->Report(std::cout);
+        Util *instance;
+        std::ostringstream outstr;
+        busses_[i]->Report(outstr);
+        FileWriter fw = FileWriterManager::Getinstance();
+        fw.Write("BusData.csv", instance->processOutput(&outstr));
     }
 
     std::cout << "~~~~~~~~~ Updating routes ";

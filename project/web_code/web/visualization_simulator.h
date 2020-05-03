@@ -8,6 +8,9 @@
 #include "web_interface.h"
 #include "config_manager.h"
 #include "iobservable.h"
+#include "util.h"
+#include "file_writer.h"
+#include "file_writer_manager.h"
 
 class Route;
 class Bus;
