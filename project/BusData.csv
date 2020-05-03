@@ -1,2 +1,7 @@
-Name	1000	Type	SmallBus	Speed	0.5	Distance	to	next	stop	1.07706	Passengers	(0)	Total	Num	of	Passengers	0	
+Name	1000	Type	SmallBus	Speed	0.5	Distance	to	next	stop	3.5475	Passengers	(0)	Total	Num	of	Passengers	5	
+Name	Natraduritur	Destination	17	Total	Wait	10		Wait	at	Stop	4		Time	on	bus	6	
+Name	Xanguiusaxia	Destination	23	Total	Wait	11		Wait	at	Stop	7		Time	on	bus	4	
+Name	Narguiusais	Destination	19	Total	Wait	8		Wait	at	Stop	4		Time	on	bus	4	
+Name	Belleducith	Destination	22	Total	Wait	6		Wait	at	Stop	2		Time	on	bus	4	
+Name	Bellextr	Destination	25	Total	Wait	15		Wait	at	Stop	12		Time	on	bus	3	
 	
